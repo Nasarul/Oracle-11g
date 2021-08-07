@@ -1,5 +1,5 @@
 # Oracle-11g
-There are some commands for Oracle 11g
+There are some SQL commands for Oracle 11g
 
 Creat user: (syntex then example)
 CREATE USER [user name] IDENTIFIED BY [password];
