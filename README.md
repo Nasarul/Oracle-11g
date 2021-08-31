@@ -1,7 +1,7 @@
 # Oracle-11g Commands:
 There are some SQL commands for Oracle 11g
 
---Creat user: (syntex then example)
+--Create user: (syntex then example)
 CREATE USER [user name] IDENTIFIED BY [password];
 CREATE USER batch11 IDENTIFIED BY rose;
 
@@ -91,7 +91,7 @@ AFTER UPDATE ON school
 
 BEGIN
             INSERT INTO dml_log_trig_table
-            (USER_NAME,DML_DATE, DML_TYPE)
+            (USER_NAME, DML_DATE, DML_TYPE)
             VALUES (USER,SYSDATE,'UPDATE');
 END;
 /
@@ -103,19 +103,19 @@ AFTER INSERT ON school
 
 BEGIN
             INSERT INTO dml_log_trig_table
-            (USER_NAME,DML_DATE, DML_TYPE)
+            (USER_NAME, DML_DATE, DML_TYPE)
             VALUES (USER,SYSDATE,'DELETE');
 END;
 /
 
---To see triger activities:
-SELECT * FROM [triger name];
+--To see trigger activities:
+SELECT * FROM [trigger name];
 SELECT * FROM dml_log_trig_table;
 
---To see all elements of the triger:
+--To see all elements of the trigger:
 SELECT * FROM USER_TRIGGERS;
 
---To see triger table's fields:
+--To see trigger table's fields:
 DESC user_triggers;
 
 --
