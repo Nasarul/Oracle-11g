@@ -6,8 +6,8 @@ CREATE USER [user name] IDENTIFIED BY [password];
 CREATE USER batch11 IDENTIFIED BY rose;
 
 --Permission for access the database:
-GRANT CONNECT,RESORCE,DBA TO [username];
-GRANT CONNECT,RESORCE,DBA TO bacth11;
+GRANT CONNECT,RESOURCE,DBA TO [username];
+GRANT CONNECT,RESOURCE,DBA TO bacth11;
 
 --Connect database:
 CONN [username]
